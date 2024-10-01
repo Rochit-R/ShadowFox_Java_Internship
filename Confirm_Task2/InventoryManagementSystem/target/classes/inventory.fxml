@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.controller.MainController">
+    <TextField fx:id="nameField" layoutX="14.0" layoutY="14.0" promptText="Item Name" />
+    <TextField fx:id="quantityField" layoutX="14.0" layoutY="60.0" promptText="Quantity" />
+    <TextField fx:id="priceField" layoutX="14.0" layoutY="106.0" promptText="Price" />
+    <Button layoutX="14.0" layoutY="152.0" text="Add" onAction="#handleAdd" />
+    <Button layoutX="90.0" layoutY="152.0" text="Update" onAction="#handleUpdate" />
+    <Button layoutX="166.0" layoutY="152.0" text="Delete" onAction="#handleDelete" />
+
+    <TableView fx:id="tableView" layoutX="250.0" layoutY="14.0" prefHeight="400.0" prefWidth="400.0">
+        <columns>
+            <TableColumn fx:id="nameColumn" text="Item Name" />
+            <TableColumn fx:id="quantityColumn" text="Quantity" />
+            <TableColumn fx:id="priceColumn" text="Price" />
+        </columns>
+    </TableView>
+</AnchorPane>
